@@ -2,8 +2,8 @@
     min-height: 90vh;
 }
 .hero > .row {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +21,7 @@
 
 @media (min-width: 800px) {
     .hero > .row {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
         gap: 100px;
     }
     .hero img {
