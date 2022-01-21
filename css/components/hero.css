@@ -1,0 +1,30 @@
+.hero {
+    min-height: 90vh;
+}
+.hero > .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero .left > .btn {
+    align-self: start;
+}
+.hero img {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .hero > .row {
+        flex-direction: row;
+        gap: 100px;
+    }
+    .hero img {
+        display: block;
+    }
+}
